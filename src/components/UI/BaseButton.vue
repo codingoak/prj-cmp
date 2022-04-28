@@ -1,12 +1,12 @@
 <template>
-  <button @click="handleClick" :type="type" :class="mode">
+  <button :type="type" :class="mode">
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  props: ["handleClick", "type", "mode"],
+  props: ["type", "mode"],
 };
 </script>
 
